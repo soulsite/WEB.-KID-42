@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    margin: 0;
+ }
+
+ 
+
+.weekly-plan {
+    margin: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.week-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.week-info label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.week-info input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+
+
+.review {
+    margin-top: 10px;
+    display: grid;
+    gap: 20px;
+}
+
+.review label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.todo-section {
+    border: 1px solid grey;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-section h2 {
+    position: relative;
+    left: 150px;
+    bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks li {
+    display: flex;
+    align-items: center;
+    
+}
+
+.tasks input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 16px;
+    text-align: center;
+    margin: 2px;
+    font: italic;
+}
+
+.week-days div {
+    position: relative;
+}
+
+.week {
+    position: absolute; 
+    top: 0px; 
+    right: 10px; 
+}
+
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    margin: 0px;
+}
+
+.tasks ul {
+    list-style: none;
+}
+
+
+.week-days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(9, 100px); 
+    margin: 5px;
+    width: 100%;
+}
+
+.day1, .day2, .day3, .day4, .day5{
+    border: 1px solid gray;
+    width: 100%; 
+    height: 100%;
+    grid-row: span 5; 
+}
+
+.day6 {
+  border: 1px solid gray;   
+  width: 100%; 
+    height: 100%;
+}
+.day7 {
+    border: 1px solid gray;
+    width: 100%; 
+    height: 100%;
+}
+
+.weekend {
+    display: grid;
+    grid-column: 3; 
+    grid-row: span 5; 
+    width: 100%; 
+    height: 100%;
+}
+
